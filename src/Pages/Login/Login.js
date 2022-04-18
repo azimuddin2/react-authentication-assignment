@@ -1,13 +1,21 @@
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Login.css';
 
 
 const Login = () => {
     const  [email, setEmail] = useState('');
     const  [password, setPassword] = useState('');
-    const  [] = useState('');
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
+    const navigate = useNavigate();
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -17,9 +25,13 @@ const Login = () => {
         setPassword(event.target.value);
     }
 
+    if(user){
+        navigate('/home');
+    }
+
     const handleUserLoginIn = event => {
         event.preventDefault();
-        // signInWithEmailAndPassword(email, password);
+        signInWithEmailAndPassword(email, password);
     }
 
 
@@ -36,6 +48,10 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required/>
                 </Form.Group>
+                <p style={{ color: 'red' }}>{error?.message}</p>
+                {
+                    loading && <p>Loading...</p>
+                }
                 <Button variant="success" type="submit">
                     Login
                 </Button>
