@@ -1,0 +1,18 @@
+.service {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service-info{
+    padding: 10px 30px;
+}
+
+.service-btn{
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+}
