@@ -2,43 +2,43 @@
     {
         "id": 1,
         "name": "Pharmarcy",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "1000",
+        "description": "Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs",
         "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/ls3-5-400x216.jpg"
     },
     {
         "id": 2,
         "name": "Heart Diseases",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "1900",
+        "description": "Coronary artery disease, arrhythmia, heart valve disease and heart failure are the four most common types of heart disease.Blood vessel disease, such as coronary artery disease.Heart rhythm problems",
         "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/ls3-2-400x216.jpg"
     },
     {
         "id": 3,
         "name": "Orthopaedic",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "1500",
+        "description": "Orthopedic surgery or orthopedics, is the branch of surgery concerned with conditions involving the musculoskeletal system.  degenerative diseases, infections, tumors, and congenital disorders.",
         "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/ls3-3-400x216.jpg"
     },
     {
         "id": 4,
         "name": "Fever & Flu",
-        "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "990",
+        "description": "Influenza (flu) can cause mild to severe illness, and at times can lead to death. Flu is different from a cold. Flu comes on suddenly. People who have flu often feel some or all of these symptoms.",
         "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/ls3-7-400x216.jpg"
     },
     {
         "id": 5,
         "name": "Eye Care",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "1400",
+        "description": "Put a warm, moist washcloth on your closed eye for a few minutes.warm cotton balls or a corner of a washcloth and gently wipe your closed eye from the inner corner to the outer corner.",
         "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/ls3-9-400x216.jpg"
     },
     {
         "id": 6,
         "name": "Dental Service",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "1100",
+        "description": "Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones.",
         "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/ls3-8-400x216.jpg"
     }
 ]

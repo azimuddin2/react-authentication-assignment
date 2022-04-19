@@ -1,8 +1,10 @@
+// import { async } from '@firebase/util';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 
@@ -16,6 +18,8 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
     const navigate = useNavigate();
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    let errorElement ;
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -26,12 +30,22 @@ const Login = () => {
     }
 
     if(user){
-        navigate('/home');
+        navigate('/checkout');
+    }
+
+    
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
 
     const handleUserLoginIn = event => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
+    }
+
+    const resetPassword = async() => {
+        await sendPasswordResetEmail(email);
+          alert('Sent email');
     }
 
 
@@ -56,9 +70,13 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
-            <p className='link-title'>
-            Create New Account? <Link className='form-link' to='/register'>Register Now</Link>
+            {errorElement}
+            <p className='link-title'>Create New Account? <Link className='form-link' to='/register'>Register Now</Link>
             </p>
+            <p className='link-title'>Forget Password? <Link className='form-link' to='' onClick={resetPassword} >Reset Password</Link>
+            </p>
+            
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
