@@ -6,8 +6,8 @@ const Service = ({ service }) => {
     const {id, name, img, price, description } = service;
 
     const navigate = useNavigate();
-    const navigateToServiceDetail = () => {
-        navigate();
+    const navigateToServiceDetail = (id) => {
+        navigate(id);
     }
 
     return (

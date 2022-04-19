@@ -9,18 +9,20 @@
 
 .support h6 {
     margin-bottom: 20px;
-    color: orange;
     font-size: 20px;
 }
 
 .about h6{
     margin-bottom: 20px;
-    color: orange;
     font-size: 20px;
 }
 
 .contact h6{
     margin-bottom: 20px;
-    color: orange;
+    
     font-size: 20px;
+}
+
+.footer {
+    width: 100%;
 }

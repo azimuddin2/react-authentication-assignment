@@ -4,8 +4,8 @@ import {Link, useNavigate } from 'react-router-dom';
 const HealthProblem = () => {
     const navigate = useNavigate();
 
-    const handleProceedCheckout = () => {
-        navigate();
+    const handleProceedCheckout = (id) => {
+        navigate(id);
     }
 
     return (
