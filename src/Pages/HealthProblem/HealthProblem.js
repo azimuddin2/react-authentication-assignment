@@ -9,8 +9,8 @@ const HealthProblem = () => {
     }
 
     return (
-        <div>
-            <h1>Health Problem!</h1>
+        <div className=''>
+            <h1 className='mx-auto'>Health Problem!</h1>
             <Link to='/checkout'>
             <button onClick={handleProceedCheckout}>Proceed Checkout</button>
             </Link>

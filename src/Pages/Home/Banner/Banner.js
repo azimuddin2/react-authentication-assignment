@@ -18,13 +18,13 @@ const Banner = () => {
         <Carousel variant="dark" activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <img
-                    className="banner-img d-block w-100 h-50"
+                    className="banner-img d-block w-100"
                     src={banner1}
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>I are by your side in any services</h3>
+                    <p>I provide all kinds of medical services to our patients according to their daily needs starting from special conditions</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -35,8 +35,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>I Always Provide Best Services</h3>
+                    <p>I provide all kinds of medical services to our patients according to their daily needs starting from special conditions</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

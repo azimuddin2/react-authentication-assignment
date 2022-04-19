@@ -24,7 +24,7 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
 
-                            <Nav.Link href="#service">Services</Nav.Link>
+                            <Nav.Link href="home#services">Services</Nav.Link>
 
                             <Nav.Link as={Link} to="about">About</Nav.Link>
                             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -38,9 +38,9 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                    <button style={{ background: '#000080' }} className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>SignOut</button>
+                                    <button className='bg-primary btn btn-link text-white text-decoration-none' onClick={handleSignOut}>SignOut</button>
                                     :
-                                    <Nav.Link style={{ background: '#000080' }} as={Link} to={'/login'}>
+                                    <Nav.Link className='text-white btn btn-link bg-primary px-3' as={Link} to={'/login'}>
                                         Login
                                     </Nav.Link>
                             }

@@ -1,0 +1,26 @@
+.support p {
+    margin-bottom: 0px;
+}
+
+.about p {
+    margin-bottom: 0px;
+}
+
+
+.support h6 {
+    margin-bottom: 20px;
+    color: orange;
+    font-size: 20px;
+}
+
+.about h6{
+    margin-bottom: 20px;
+    color: orange;
+    font-size: 20px;
+}
+
+.contact h6{
+    margin-bottom: 20px;
+    color: orange;
+    font-size: 20px;
+}

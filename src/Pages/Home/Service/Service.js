@@ -14,7 +14,7 @@ const Service = ({ service }) => {
         <div className='service'>
             <img src={img} alt="" />
             <div className='service-info'>
-                <h2>{name}</h2>
+                <h3>{name}</h3>
                 <p>Price: ${price}</p>
                 <p>{description}</p>
 
