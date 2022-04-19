@@ -27,6 +27,7 @@ const Footer = () => {
                 <div className='contact w-50'>
                     <h6>Contact info</h6>
                     <p>Visit DentiCare on these social links connect with us. Make sure to follow our accouts for regular updates.</p>
+                    
                 </div>
             </div>
         </footer>

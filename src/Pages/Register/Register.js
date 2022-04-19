@@ -55,7 +55,7 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto border p-5 mt-5 rounded-3 bg-light'>
-            <h2 className='text-primary text-center mb-4'>Please Register</h2>
+            <h1 className='text-primary text-center mb-4'>Please Register</h1>
             <Form onSubmit={handleCreateUser}>
                 <Form.Group className="mb-3" controlId="formBasicText">
                     <Form.Label>Your Name</Form.Label>
@@ -84,7 +84,7 @@ const Register = () => {
                 <p style={{ color: 'red' }}>{error}</p>
                 <Button
                 disabled = {!agree}
-                    variant="primary" type="submit">Register</Button>
+                    variant="primary mb-4 w-50 d-block mx-auto" type="submit">Register</Button>
             </Form>
             <p className='link-title'>
                 Already have an account?<Link className='form-link' to='/login'>Login</Link>

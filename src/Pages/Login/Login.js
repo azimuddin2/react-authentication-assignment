@@ -51,7 +51,7 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto border p-5 mt-5 rounded-3 bg-light'>
-            <h2 className='text-success text-center mb-4'>Please Login</h2>
+            <h1 className='text-primary text-center mb-4'>Please Login</h1>
             <Form onSubmit={handleUserLoginIn}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -66,7 +66,7 @@ const Login = () => {
                 {
                     loading && <p>Loading...</p>
                 }
-                <Button variant="success" type="submit">
+                <Button variant="primary mb-4 w-50 d-block mx-auto" type="submit">
                     Login
                 </Button>
             </Form>
